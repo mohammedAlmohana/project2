@@ -1,0 +1,20 @@
+<hr>
+<%= form_for :farm do |f|%>
+    <label>Name: </label>
+    <%=  f.name%> 
+    <br>
+    <label>Price: </label>
+    <%= f.price %> 
+    <br>
+    <label>Location: </label>
+    <%= f.location %> 
+    <br>
+     <label>image: </label>
+    <img style="width:150px;height:150px"src="<%= f.image %>">
+   <hr>
+   <%end%>
+
+
+
+
+

@@ -1,0 +1,12 @@
+<h1> Edit <%= @farm.name %></h1>
+<%= form_for @farm, url: {action: "update"} do |f| %>
+    <%= f.label :name, 'Name' %><br>
+    <%= f.text_field :name %><br><br>
+    <%= f.label :price, 'Price' %><br>
+    <%=f.text_field :price %><br><br>
+    <%= f.label :location, 'Location' %><br> 
+    <%=f.text_field :location %><br><br> 
+    <%= f.label :image, 'Image' %><br> 
+    <%=f.text_field :image %><br><br> 
+   <%= f.submit "Submit" %> 
+<% end %>

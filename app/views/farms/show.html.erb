@@ -1,0 +1,12 @@
+<h1><img src=<%=@farm.image%> height="150" width="400"></h1>
+
+<h1><%= @farm.name %></h1>
+<h1><%= @farm.price %></h1>
+<h1><%= @farm.location %></h1>
+<% if current_user.id == @farm.user_id %>
+    <%= link_to 'Edit', edit_farm_path(@farm) %> 
+    <%= link_to 'Delete', farm_path(@farm), method: :delete%>
+<%else%>
+    <button>Rent</button>
+<%end%>
+<%= link_to 'Home', farms_path %>

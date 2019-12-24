@@ -1,0 +1,6 @@
+<% if(user_signed_in?)%>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+    <%= link_to "Update my Acount", edit_user_registration_path%>
+<% end %>
+<h1>hello  <%= @user.username %></h1>
+

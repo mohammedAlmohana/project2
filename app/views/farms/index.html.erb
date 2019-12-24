@@ -1,0 +1,18 @@
+<% if(user_signed_in?)%>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+    <%= link_to "Update my Acount", edit_user_registration_path%>
+<% end %>
+<h1>Hello  <%= @user.email %></h1>
+<h3><%=  link_to 'Add A New Farm', new_farm_path %></h3>
+<hr>
+
+<% @farms.each do |farm|%>   
+<tr>
+<td><img src=<%=farm.image%> height="100" width="100"></td><br>
+
+<td><%= link_to farm.name, farm_path(farm)%></td><br>
+<td><%=farm.price%></td><br>
+<td><%=farm.location%></td><br>
+</tr>
+<% end %>
+  
