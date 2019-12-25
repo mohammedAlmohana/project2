@@ -6,14 +6,14 @@
 <% end %>
 <h1><img img class="img-thumbnail" src=<%=@farm.image%> height="150" width="400"></h1>
 
-<h1><%= @farm.name %></h1>
+<h1><%= @farm.name  %></h1>
 <h1><%= @farm.price %> SR</h1>
-<h1><%= @farm.location %></h1>
+<h1><%= @farm.location  %></h1>
 <% if current_user.id == @farm.user_id %>
-    <%= link_to 'Edit', edit_farm_path(@farm) %> 
-    <%= link_to 'Delete', farm_path(@farm), method: :delete%>
+    <%= link_to 'Edit', edit_farm_path(@farm), class: "bg-dark text-danger" %> 
+    <%= link_to 'Delete', farm_path(@farm), method: :delete , class: "bg-dark text-danger"%>
 <%else%>
-<%= link_to 'Rent', alert_path(@farm, 1)%> 
+<%= link_to 'Rent', alert_path(@farm, 1) , class: "bg-dark text-danger"%> 
     
 <%end%>
 </div>
