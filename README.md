@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# FARM RENT
 
-Things you may want to cover:
+# Introduction:
+Farm Rent is help the user to rent the farms with and add the own farm.
 
-* Ruby version
+## Deployment:
+[The project demo](https://ancient-caverns-93111.herokuapp.com/farms)
 
-* System dependencies
+## Technologies used in the project:
 
-* Configuration
+* Roby on Rails
+* Bootstrap4
+* Jquery
+* Git
+* Github
+* HTML5
+* CSS3
+* Heroku
+* PostgreSQL
 
-* Database creation
+## User Story:
+Farms Rent the user can create an account to show and add farms for the user profile. After the user login can rent farms, edit the farms, delete the farm, and add a new farm. The user can add the name, price, location, and the image for a new farm.
 
-* Database initialization
 
-* How to run the test suite
+## wireframes:
+ ![wireframes](Desktop/Wirefraims.jpeg)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ ## ERD:
+ ![ERD](Desktop/ERD.jpeg)
