@@ -10,10 +10,10 @@
 <h1><%= @farm.price %> SR</h1>
 <h1><%= @farm.location  %></h1>
 <% if current_user.id == @farm.user_id %>
-    <%= link_to 'Edit', edit_farm_path(@farm), class: "bg-dark text-danger" %> 
-    <%= link_to 'Delete', farm_path(@farm), method: :delete , class: "bg-dark text-danger"%>
+    <%= link_to 'Edit', edit_farm_path(@farm), class: "alert alert-primary" %> 
+    <%= link_to 'Delete', farm_path(@farm), method: :delete , class: "alert alert-primary"%>
 <%else%>
-<%= link_to 'Rent', alert_path(@farm, 1) , class: "bg-dark text-danger"%> 
+<%= link_to 'Rent', alert_path(@farm, 1) , class: "alert alert-primary"%> 
     
 <%end%>
 </div>

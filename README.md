@@ -3,7 +3,9 @@
 # FARM RENT
 
 # Introduction:
-Farm Rent is help the user to rent the farms with and add the own farm.
+I build this project because I am from Al Ahsa, KSA. In Al Ahsa we have many farms and the people life 
+in Al Ahsa face problem if want to rent the farm because of the need to connect with the owner directly to rent it
+know I try to make all processes in online.
 
 ## Deployment:
 [The project demo](https://ancient-caverns-93111.herokuapp.com/farms)
